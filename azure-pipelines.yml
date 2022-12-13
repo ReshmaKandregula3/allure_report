@@ -21,3 +21,9 @@ steps:
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
 
+- task: PublishCucumberReport@1
+  inputs:
+    jsonDir: 'target/cucumber-report'
+    outputPath: 'target/cucumber-report'
+    theme: 'bootstrap'
+    reportSuiteAsScenarios: true

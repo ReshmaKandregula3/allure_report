@@ -43,3 +43,26 @@ steps:
     PathtoPublish: '$(build.artifactstagingdirectory)'
   condition: succeededOrFailed()
 
+
+# - task: SendEmail@1
+#   inputs:
+#     to: 'developers@example.com'
+#     subject: 'Build status: $(System.DefinitionName) $(Build.BuildNumber)'
+#     body: |
+#       <html>
+#       <body>
+#       <h1>Build Status</h1>
+#       <p>The build <strong>$(Build.BuildNumber)</strong> of <strong>$(System.DefinitionName)</strong> is <strong>$(Build.Status)</strong></p>
+#       <p>You can check the pipeline details <a href="$(System.TeamFoundationCollectionUri)/$(System.TeamProject)/_build?definitionId=$(Build.DefinitionId)&_a=summary">here</a></p>
+#       </body>
+#       </html>
+#     isHtml: true
+
+- task: SendEmail@1
+  inputs:
+    To: 'rkandregula3@gmail.com'
+    From: 'reshma.kandregula@capgemini.com'
+    Subject: 'Dashboard and Status'
+    BodyAsHtml: true
+    AddAttachment: true
+    Attachment: 'C:\Users\RKANDREG\OneDrive - Capgemini\Documents\OneDrive - Capgemini\Microsoft Teams Chat Files'

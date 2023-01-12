@@ -87,6 +87,19 @@ steps:
 #     SmtpPassword: '71nku34l81N'
 
 
+# - task: SendEmail@1
+#   inputs:
+#     To: 'deepika.narayanappa@capgemini.com'
+#     From: 'reshma.kandregula@capgemini.com'
+#     Subject: 'dashboard and status'
+#     Body: 'Created new'
+#     BodyAsHtml: true
+#     AddAttachment: true
+#     Attachment: 'C:\Users\RKANDREG\OneDrive - Capgemini\Documents\OneDrive - Capgemini\Documents\allure-report\AllureReport.docx'
+#     SmtpServer: 'smtpout.secureserver.net'
+#     SmtpUsername: 'reshma.kandregula@capgemini.com'
+#     SmtpPassword: '71nku34l81N'
+
 - task: SendEmail@1
   inputs:
     To: 'deepika.narayanappa@capgemini.com'
@@ -95,7 +108,7 @@ steps:
     Body: 'Created new'
     BodyAsHtml: true
     AddAttachment: true
-    Attachment: 'C:\Users\RKANDREG\OneDrive - Capgemini\Documents\OneDrive - Capgemini\Documents\allure-report\AllureReport.docx'
+    Attachment: 'target/cucumber-report/report.json'
     SmtpServer: 'smtpout.secureserver.net'
     SmtpUsername: 'reshma.kandregula@capgemini.com'
     SmtpPassword: '71nku34l81N'

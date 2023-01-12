@@ -81,7 +81,7 @@ steps:
     Body: 'Chumma da'
     BodyAsHtml: true
     AddAttachment: true
-    Attachment: 'C:\Users\RKANDREG\OneDrive - Capgemini\Documents\OneDrive - Capgemini\Microsoft Teams Chat Files\AllureReport.docx'
+    Attachment: 'AllureReport.docx'
     SmtpServer: 'smtpout.secureserver.net'
     SmtpUsername: 'reshma.kandregula@capgemini.com'
     SmtpPassword: '71nku34l81N'

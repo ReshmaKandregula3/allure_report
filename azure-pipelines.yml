@@ -60,14 +60,28 @@ steps:
 
 
 
+# - task: SendEmail@1
+#   inputs:
+#     To: 'rkandregula3@gmail.com'
+#     From: 'reshma.kandregula@capgemini.com'
+#     Subject: 'Dashboard and Status'
+#     Body: |
+#       Am sending the status of the cicd pipeline.
+#       PFA
+#     BodyAsHtml: true
+#     AddAttachment: true
+#     Attachment: 'C:\Users\RKANDREG\OneDrive - Capgemini\Documents\OneDrive - Capgemini\Microsoft Teams Chat Files'
+
+
 - task: SendEmail@1
   inputs:
-    To: 'rkandregula3@gmail.com'
+    To: 'deepika.narayanappa@capgemini.com'
     From: 'reshma.kandregula@capgemini.com'
-    Subject: 'Dashboard and Status'
-    Body: |
-      Am sending the status of the cicd pipeline.
-      PFA
+    Subject: 'Dashboard'
+    Body: 'Chumma da'
     BodyAsHtml: true
     AddAttachment: true
-    Attachment: 'C:\Users\RKANDREG\OneDrive - Capgemini\Documents\OneDrive - Capgemini\Microsoft Teams Chat Files'
+    Attachment: 'C:\Users\RKANDREG\OneDrive - Capgemini\Documents\OneDrive - Capgemini\Microsoft Teams Chat Files\AllureReport.docx'
+    SmtpServer: 'smtpout.secureserver.net'
+    SmtpUsername: 'reshma.kandregula@capgemini.com'
+    SmtpPassword: '71nku34l81N'

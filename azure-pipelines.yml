@@ -100,32 +100,20 @@ steps:
 #     SmtpUsername: 'reshma.kandregula@capgemini.com'
 #     SmtpPassword: '71nku34l81N'
 
-# - task: SendEmail@1
-#   inputs:
-#     To: 'deepika.narayanappa@capgemini.com'
-#     From: 'reshma.kandregula@capgemini.com'
-#     Subject: 'dashboard and status'
-#     Body: 'Created new'
-#     BodyAsHtml: true
-#     AddAttachment: true
-#     Attachment: 'target/cucumber-report/report.json'
-#     SmtpServer: 'smtpout.secureserver.net'
-#     SmtpUsername: 'reshma.kandregula@capgemini.com'
-#     SmtpPassword: '71nku34l81N'
+- task: SendEmail@1
+  inputs:
+    To: 'deepika.narayanappa@capgemini.com'
+    From: 'reshma.kandregula@capgemini.com'
+    Subject: 'dashboard and status'
+    Body: 'Created new'
+    BodyAsHtml: true
+    # AddAttachment: true
+    # Attachment: 'Sys'
+    SmtpServer: 'smtpout.secureserver.net'
+    SmtpUsername: 'reshma.kandregula@capgemini.com'
+    SmtpPassword: '71nku34l81N'
  
   
   
-- task: SendEmail@1
-  inputs:
-    to: 'deepika.narayanappa@capgemini.com'
-    From: 'reshma.kandregula@capgemini.com'
-    subject: 'Build status: $(System.DefinitionName) $(Build.BuildNumber)'
-    body: |
-      <html>
-      <body>
-      <h1>Build Status</h1>
-      <p>The build <strong>$(Build.BuildNumber)</strong> of <strong>$(System.DefinitionName)</strong> is <strong>$(Build.Status)</strong></p>
-      <p>You can check the pipeline details <a href="$(System.TeamFoundationCollectionUri)/$(System.TeamProject)/_build?definitionId=$(Build.DefinitionId)&_a=summary">here</a></p>
-      </body>
-      </html>
+
   

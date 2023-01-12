@@ -80,8 +80,8 @@ steps:
     Subject: 'Dashboard'
     Body: 'Chumma da'
     BodyAsHtml: true
-    AddAttachment: true
-    Attachment: 'AllureReport.docx'
+    # AddAttachment: true
+    # Attachment: 'AllureReport.docx'
     SmtpServer: 'smtpout.secureserver.net'
     SmtpUsername: 'reshma.kandregula@capgemini.com'
     SmtpPassword: '71nku34l81N'

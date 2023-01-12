@@ -73,15 +73,29 @@ steps:
 #     Attachment: 'C:\Users\RKANDREG\OneDrive - Capgemini\Documents\OneDrive - Capgemini\Microsoft Teams Chat Files'
 
 
+# - task: SendEmail@1
+#   inputs:
+#     To: 'deepika.narayanappa@capgemini.com'
+#     From: 'reshma.kandregula@capgemini.com'
+#     Subject: 'Dashboard'
+#     Body: 'Chumma da'
+#     BodyAsHtml: true
+#     # AddAttachment: true
+#     # Attachment: 'AllureReport.docx'
+#     SmtpServer: 'smtpout.secureserver.net'
+#     SmtpUsername: 'reshma.kandregula@capgemini.com'
+#     SmtpPassword: '71nku34l81N'
+
+
 - task: SendEmail@1
   inputs:
     To: 'deepika.narayanappa@capgemini.com'
     From: 'reshma.kandregula@capgemini.com'
-    Subject: 'Dashboard'
-    Body: 'Chumma da'
+    Subject: 'dashboard and status'
+    Body: 'Created new'
     BodyAsHtml: true
-    # AddAttachment: true
-    # Attachment: 'AllureReport.docx'
+    AddAttachment: true
+    Attachment: 'C:\Users\RKANDREG\OneDrive - Capgemini\Documents\OneDrive - Capgemini\Documents\allure-report\AllureReport.docx'
     SmtpServer: 'smtpout.secureserver.net'
     SmtpUsername: 'reshma.kandregula@capgemini.com'
     SmtpPassword: '71nku34l81N'

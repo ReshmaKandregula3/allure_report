@@ -116,6 +116,6 @@ steps:
   
   
 
-steps:
+# steps:
 - task: agent-screenshot@1
   condition: or(canceled(), failed(), passed())

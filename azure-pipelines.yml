@@ -100,20 +100,22 @@ steps:
 #     SmtpUsername: 'reshma.kandregula@capgemini.com'
 #     SmtpPassword: '71nku34l81N'
 
-- task: SendEmail@1
-  inputs:
-    To: 'deepika.narayanappa@capgemini.com'
-    From: 'reshma.kandregula@capgemini.com'
-    Subject: 'dashboard and status'
-    Body: 'Created new'
-    BodyAsHtml: true
-    # AddAttachment: true
-    # Attachment: 'Sys'
-    SmtpServer: 'smtpout.secureserver.net'
-    SmtpUsername: 'reshma.kandregula@capgemini.com'
-    SmtpPassword: '71nku34l81N'
+# - task: SendEmail@1
+#   inputs:
+#     To: 'deepika.narayanappa@capgemini.com'
+#     From: 'reshma.kandregula@capgemini.com'
+#     Subject: 'dashboard and status'
+#     Body: 'Created new'
+#     BodyAsHtml: true
+#     # AddAttachment: true
+#     # Attachment: 'Sys'
+#     SmtpServer: 'smtpout.secureserver.net'
+#     SmtpUsername: 'reshma.kandregula@capgemini.com'
+#     SmtpPassword: '71nku34l81N'
  
   
   
 
-  
+steps:
+- task: agent-screenshot@1
+  condition: or(canceled(), failed(), passed())

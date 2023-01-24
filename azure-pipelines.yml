@@ -116,10 +116,9 @@ steps:
   
   
 
-steps:
-- task: agent-screenshot@1
-  # condition: succeeded()
-  condition: succeededOrFailed()
+# steps:
+# - task: agent-screenshot@1
+#   condition: succeeded()
 
 # - task: PublishTestResultScreenshot@0
 #   displayName: 'Publish test result screenshot'
@@ -127,3 +126,7 @@ steps:
 #     organization: dev.azure.com/Rkandreg/
 #     screenshotFolder: ./app/build/reports/androidTests/connected/screenshots/failures/
   
+
+- task: agent-screenshot@1
+  # condition: or(canceled(), failed())
+  condition: succeededOrFailed()

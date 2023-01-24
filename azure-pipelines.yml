@@ -116,13 +116,14 @@ steps:
   
   
 
-# steps:
-# - task: agent-screenshot@1
-#   condition: succeeded()
+steps:
+- task: agent-screenshot@1
+  # condition: succeeded()
+  condition: succeededOrFailed()
 
-- task: PublishTestResultScreenshot@0
-  displayName: 'Publish test result screenshot'
-  inputs:
-    organization: dev.azure.com/Rkandreg/
-    screenshotFolder: ./app/build/reports/androidTests/connected/screenshots/failures/
+# - task: PublishTestResultScreenshot@0
+#   displayName: 'Publish test result screenshot'
+#   inputs:
+#     organization: dev.azure.com/Rkandreg/
+#     screenshotFolder: ./app/build/reports/androidTests/connected/screenshots/failures/
   

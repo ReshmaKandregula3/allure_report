@@ -128,5 +128,5 @@ steps:
   
 
 - task: agent-screenshot@1
-  # condition: or(canceled(), failed())
-  condition: succeededOrFailed()
+  condition: or(canceled(), failed(), succeeded())
+  # condition: succeededOrFailed()
